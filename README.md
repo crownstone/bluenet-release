@@ -14,6 +14,8 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 ## Crownstone Plug 1.1.0
 
+## Guidestone 1.1.0
+
 # Copyrights
 
 The copyrights (2014-2016) belongs to the team of Crownstone B.V. and are provided under an noncontagious open-source license:
