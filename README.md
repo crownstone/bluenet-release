@@ -12,6 +12,7 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 ## Crownstone Plug 1.0.0
 
+## Crownstone Plug 1.1.0
 
 # Copyrights
 
