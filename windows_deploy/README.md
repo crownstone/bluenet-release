@@ -6,12 +6,32 @@
 
 These files are used to upload release firmware to the [Crownstone](http://crownstone.rocks) using a JTAG interface.
 
-use the "merghex.bat" script to merge the following files in a single flashable package.
+## Prerequisites
+Install nrf5X command line tools for windows. The installer can be found at
+https://www.nordicsemi.com/eng/Products/Bluetooth-low-energy/nRF52832#Downloads
+
+The batch scripts assume the command line tools are installed in the (default) location:
+C:\Program Files (x86)\Nordic Semiconductor\
+If this is not the case, please adjust the nrf_folder variable in the scripts to refelct your installation location
+
+## Merging hex files
+
+The `mergeHexFiles.bat` file should be in the same folder as the following files to work.
+ * Crownstone.hex
+ * Bootloader.hex
+ * s132_nrf52_2.0.0_softdevice.hex
+
+Since we're using SDK 11.0.0 you need the appropriate softdevice hexfile
+You can obtain the `s132_nrf52_2.0.0_softdevice.hex` file from the nordic nrf5x SDK11, downloadable at: http://developer.nordicsemi.com/nRF5_SDK/nRF5_SDK_v11.x.x/
+
+After executing the batch script, you should see a new file called `MERGED_OUTPUT.hex`
+
+## flash firmware using JTAG
 
 
 # Copyrights
 
-The copyrights (2014-2016) belongs to the team of Crownstone B.V. and are provided under an noncontagious open-source license:
+The copyrights (2014-2017) belongs to the team of Crownstone B.V. and are provided under an noncontagious open-source license:
 
 * Authors: Dominik Egger, Bart van Vliet, Anne van Rossum, Marc Hulscher, Peet van Tooren, Alex de Mulder, Christian Haas
 * Date: 27 Jan. 2014
