@@ -16,7 +16,7 @@ If this is not the case, please adjust the nrf_folder variable in the scripts to
 
 ## Merging hex files
 
-The `mergeHexFiles.bat` file should be in the same folder as the following files to work.
+The `merge_hex_files.bat` file should be in the same folder as the following files to work.
  * Crownstone.hex
  * Bootloader.hex
  * s132_nrf52_2.0.0_softdevice.hex
@@ -24,10 +24,19 @@ The `mergeHexFiles.bat` file should be in the same folder as the following files
 Since we're using SDK 11.0.0 you need the appropriate softdevice hexfile
 You can obtain the `s132_nrf52_2.0.0_softdevice.hex` file from the nordic nrf5x SDK11, downloadable at: http://developer.nordicsemi.com/nRF5_SDK/nRF5_SDK_v11.x.x/
 
-After executing the batch script, you should see a new file called `MERGED_OUTPUT.hex`
+After executing the batch script, you should see a new file called `MERGED_FIRMWARE.hex`
 
 ## flash firmware using JTAG
 
+Before flashing your crownstone you need to select the appropriate `boards.txt` file corresponding to the physical board you intend to flash.
+You can find your `boards.txt` file in the boards/ folder.
+In order to flash the firmware you need to copy all required files in to a single folder.
+The files are:
+ * flash_firmware.bat
+ * MERGED_FIRMWARE.hex
+ * boards.txt
+
+You can then run `flash_firmware.bat` to flash the firmware. If anything goes wrong, please submit a bug report with the log output that is generated.
 
 # Copyrights
 
