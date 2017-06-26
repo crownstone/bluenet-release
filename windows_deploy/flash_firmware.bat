@@ -1,4 +1,4 @@
-::@ECHO OFF
+@ECHO OFF
 SET nrf_folder=C:\Program Files (x86)\Nordic Semiconductor\nrf5x\bin
 SET hex_file="MERGED_FIRMWARE.hex"
 
