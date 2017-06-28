@@ -10,11 +10,20 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 # Releases
 
-## Crownstone Plug 1.0.0
+## Crownstone 1.3.3
+- Fixed crashes on disconnect.
+
+## Crownstone 1.3.1
+- Added safety measures.
+- Keep advertising while connected.
+- Connections time out when nothing is written (helps against zombie connections from certain phones).
+- Added command to increase TX power during setup.
+
+## Guidestone 1.1.0
 
 ## Crownstone Plug 1.1.0
 
-## Guidestone 1.1.0
+## Crownstone Plug 1.0.0
 
 # Copyrights
 
