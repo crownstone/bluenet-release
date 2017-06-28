@@ -11,7 +11,7 @@ This Repository keeps track of the released version of bluenet. For the code hav
 # Releases
 
 ## Crownstone 1.4.0
-- Use cristal for low frequency clock.
+- Use crystal for low frequency clock.
 
 ## Crownstone 1.3.3
 - Fixed crashes on disconnect.
