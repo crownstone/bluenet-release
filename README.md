@@ -30,7 +30,7 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 # Copyrights
 
-The copyrights (2014-2016) belongs to the team of Crownstone B.V. and are provided under an noncontagious open-source license:
+The copyrights (2014-2017) belongs to the team of Crownstone B.V. and are provided under an noncontagious open-source license:
 
 * Authors: Dominik Egger, Bart van Vliet, Anne van Rossum, Marc Hulscher, Peet van Tooren, Alex de Mulder, Christian Haas
 * Date: 27 Jan. 2014

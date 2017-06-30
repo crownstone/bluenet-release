@@ -16,6 +16,7 @@ Type | Name | Description
 --- | --- | ---
 uint16 | Prefix | defaults to 0
 uint16 | Board version | Board value corresponding to your board.
+
 The version number corresponding to your particular board can be found in `cs_Boards.h`
 
 ## <a name="general_board_info"></a> General Board Information
@@ -46,4 +47,5 @@ uint8 | Prefix | Prefix | <li> 0xFF </li>
 uint8 | Production year | Year of PCB fabrication | <li> 2016: 16-> 0x10 </li> <li>2017: 16 -> 0x11</li>
 uint8 | Production week | Week of PCB fabrication | <li> week 01: 0x01</li> <li> </li> <li>week 52: 0x34</li>
 uint8 | Housing ID | Iteration of relevant housing | <li> first relevant iteration: 0x01 </li>
+
 Housing will iterate in design per product type. At the time of writing this, we have one housing design per product type so that ID will default to 0x01
