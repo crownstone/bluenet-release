@@ -10,6 +10,16 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 # Releases
 
+## Crownstone 1.5.1
+- Enabled sharing time via mesh.
+
+## Crownstone 1.5.0
+- Added: schedule functionality: the crownstone can be scheduled to turn on/off at certain times.
+- Added: configurable soft fuses.
+- Added: also reset relay on a factory reset.
+- Added: turn on relay after an hour in setup mode, for built-in crownstones.
+- Fixed: unset error bit in advertisement when state errors are reset.
+
 ## Crownstone 1.4.0
 - Use crystal for low frequency clock.
 
