@@ -10,6 +10,9 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 # Releases
 
+## Bootloader 1.3.0
+- Added support for boards ACR01B2G and ACR01B6C.
+
 ## Crownstone 1.5.1
 - Enabled sharing time via mesh.
 
