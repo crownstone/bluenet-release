@@ -26,15 +26,20 @@ You can obtain the `s132_nrf52_2.0.0_softdevice.hex` file from the nordic nrf5x 
 
 After executing the batch script, you should see a new file called `MERGED_FIRMWARE.hex`
 
+## Generating uicr variables file
+
+Before flashing your crownstone you need to generate an appropriate `VARIABLES.cmd` file corresponding to the physical board you intend to flash.
+In order to generate this file you need to run the `flash_UICR_variable_generator.py` script. This script will present multiple sets of options from which you need to select the option that relates to the board you intend to flash.
+The script uses the `uicr.json` file to generate options. This means you need to have the `uicr.josn` file in the same folder as the python script.
+After you have run the script successfully, you will see that 2 files have been generated. Of these 2 you will only need the `VARIABLES.cmd` file further in order to flash firmware to your Crownstone.
+	
 ## flash firmware using JTAG
 
-Before flashing your crownstone you need to select the appropriate `boards.txt` file corresponding to the physical board you intend to flash.
-You can find your `boards.txt` file in the boards/ folder.
 In order to flash the firmware you need to copy all required files in to a single folder.
 The files are:
  * flash_firmware.bat
  * MERGED_FIRMWARE.hex
- * boards.txt
+ * VARIABLES.cmd
 
 You can then run `flash_firmware.bat` to flash the firmware. If anything goes wrong, please submit a bug report with the log output that is generated.
 

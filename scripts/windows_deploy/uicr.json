@@ -1,0 +1,165 @@
+{
+  "product family": {
+	"crownstone": "0x01"
+  },
+  "market": {
+	"eu": "0x01"  
+  },
+  "product type":{
+	"undefined": "0x00",
+	"development board": "0x01",
+	"plug": "0x02",
+	"builtin": "0x03",
+	"guidestone": "0x04"
+  },
+  "versioning": {
+    "undefined": {
+      "generic_board":{
+        "major": "0x00",
+        "minor": "0x00",
+        "patch": "0x00"
+      }
+    },
+    "development board": {
+      "generic_board":{
+        "major": "0x00",
+        "minor": "0x00",
+        "patch": "0x00"
+      }
+    },
+    "plug": {
+      "ACR01B2A": {
+        "major": "0x00",
+        "minor": "0x01",
+        "patch": "0x00",
+        "legacy board value": 1500,
+        "note": "first prototype"
+      },
+      "ACR01B2B": {
+        "major": "0x00",
+        "minor": "0x02",
+        "patch": "0x00",
+        "legacy board value": 1501,
+        "note": "second prototype, replaced caps before and after LDO with electrolytic caps due to DC bias issues with MLCC caps."
+      },
+      "ACR01B2C": {
+        "major": "0x01",
+        "minor": "0x00",
+        "patch": [
+          "0x00",
+          "0x01"
+        ],
+        "production year": 16,
+        "production week": 48,
+        "housing id": 1,
+        "legacy board value": 1502,
+        "note": "first production release\n replaced primary supply resistor with MELF type and increased value to 100 Ohm."
+      },
+      "ACR01B2E": {
+        "major": "0x01",
+        "minor": "0x01",
+        "patch": "0x00",
+        "legacy board value": 1503,
+        "note": "prototype\nRemoved MELF resistor and added compensation capacitor to main power supply.\n Removed C7 parallel capacitor\nAdded pulldown resistor to IGBT driver input\n Moved thermal fuse to cover both power paths.\nAltered offset and gain of power measurement circuits.\nAdded measurement offset line to ADC in"
+      },
+      "ACR01B2F": {
+        "major": "0x01",
+        "minor": "0x02",
+        "patch": "0x00",
+        "note": "schematic change\nChanged power measurement resistor values"
+      },
+      "ACR01B2G": {
+        "major": "0x01",
+        "minor": "0x03",
+        "patch": "0x00",
+        "production year": 17,
+        "housing id": 2,
+        "legacy board value": 1504,
+        "note": "production version\n schematic change\nAdded 1MOhm pullup to offset measurement line (for internal chip resistor compensation) \n NOTE: later BOM change altered C15 from 10uF to 4.7uF this is not reflected in the schematic!!! Similarly, R21 should be removed from the board. This is altered in the BOM, but not in the schematic!!!"
+      },
+        "ACR01B2H": {
+        "major": "0x01",
+        "minor": "0x03",
+        "patch": "0x00",
+        "note": "schematic change\nOnly difference between this version and the last is in some alterations to the BOM"
+      }
+    },
+    "builtin": {
+      "ACR01B1A": {
+        "major": "0x00",
+        "minor": "0x01",
+        "patch": "0x00",
+        "legacy board value": 1000,
+        "note": "first prototype"
+      },
+      "ACR01B1B": {
+        "major": "0x00",
+        "minor": "0x02",
+        "patch": "0x00",
+        "legacy board value": 1001,
+        "note": "schematic change\n Minor changes to the BOM in component selection"
+      },
+      "ACR01B1C": {
+        "major": "0x00",
+        "minor": "0x03",
+        "patch": "0x00",
+        "legacy board value": 1002,
+        "note": "schematic change\n Increased amount of capacitors before and after the LDO. (total of 2x47uF before and 4x47uF after)\n Increased amount of solder connection points between the two boards"
+      },
+      "ACR01B1D": {
+        "major": "0x00",
+        "minor": "0x04",
+        "patch": [
+          "0x00",
+          "0x01"
+        ],
+        "production year": 17,
+        "production week": 8,
+        "housing id": 1,
+        "legacy board value": 1004,
+        "note": "first production release\n changed the capacitors before and after the LDO to film capacitors\n moved the MELF to another point in the schematic\n changed the LDO to a more efficient part",
+        "minor01Note": "urp",
+        "patch01Note": "bluh"
+      },
+      "ACR01B1E": {
+        "major": "0x00",
+        "minor": "0x05",
+        "patch": [
+          "0x00",
+          "0x01"
+        ],
+        "production year": 17,
+        "production week": 8,
+        "housing id": 1,
+        "legacy board value": 1004,
+        "note": "schematic change that updates the files and remove C7\n note that the schematic change does not reflect the addition of the pulldown resistor on the igbt driver in patch01 of ACR01B1D nor is VAR1 removed off it."
+      },
+      "ACR01B6A": {
+        "major": "0x01",
+        "minor": "0x03",
+        "patch": "0x00",
+        "note": "prototype & major schematic change\n remove MELF resistor and added C15 copensation cap in parallel with zener diode\n Layout change to allow for higher capacitance values before and after LDO (100uF and 220uF respectively)\n Thermal fusse moved to cover both IGBT and relay paths\n Pulldown added onto IGBT driver input\n Current and voltage measurement circuit altered and supplemented with an offset read\n PTC thermal sensor replaced with NTC\n Inductor added in IGBT path for high freq switch spike reduction"
+      },
+      "ACR01B6B": {
+        "major": "0x01",
+        "minor": "0x04",
+        "patch": "0x00",
+        "note": "No discernable change\n mainly component source alterations"
+      },
+      "ACR01B6C": {
+        "major": "0x01",
+        "minor": "0x05",
+        "patch": "0x00",
+        "legacy board value": 1005,
+        "note": "schematic change\n name change for 'GND' to 'NEUTRAL'\n removed LED,R19,R20 from BOM output\n Also removed R21 from BOM. Should not be used in further revivions"
+      }
+    },
+    "guidestone": {
+      "production_board":{
+        "major": "0x01",
+        "minor": "0x00",
+        "patch": "0x00"
+      }
+    }
+  }
+}
