@@ -10,6 +10,9 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 # Releases
 
+## Crownstone 1.6.0
+- Added support for boards ACR01B2G and ACR01B6C.
+
 ## Bootloader 1.3.0
 - Added support for boards ACR01B2G and ACR01B6C.
 
