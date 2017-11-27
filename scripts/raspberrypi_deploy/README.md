@@ -1,6 +1,23 @@
 # Raspberry pi deployment scripts
 
-Please check back here in the future for a description of the flash process using only a raspberry pi
+## install
+To do a first-time setup, all you need to do is run the `install_openocd.sh` script. This will take a while, so you might want to get a cup of coffe.
+
+## connecting Crownstone to Raspberry pi
+
+## flashing firmware
+In order to flash firmware to a Crownstone, you need to have the following files present in a single folder:
+ - `openocd.cfg`
+ - firmware intended to flash to the Crownstone, here called `MERGED_OUTPUT.hex`
+ - UICR settings file called `VARIABLES.cfg`
+ 
+ At the moment, the `MERGED_OUTPUT.hex` and `VARIABLES.cfg` files can only be obtained by running `merge_hex_files.bat` and  `flash_UICR_variable_generator.py` respectively, from the windows_deploy folder. 
+ Follow the instructions found in the README of that folder for more information.
+ 
+ If these 3 files are present in the same folder, all you need to do is run:
+ `$ openocd`
+ NOTE: you need to be root to properly execute openocd
+ NOTE2: the script might hang after a while. It's not perfect yet. You can just stop the process and restart it. this usually makes it work. If the script is properly executed, the script will end on "`shutdown command invoked`"
 
 # Copyrights
 
