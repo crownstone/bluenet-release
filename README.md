@@ -10,6 +10,12 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 # Releases
 
+## Crownstone 1.7.0
+- Dimming now done by trailing edge dimming (currently only works for 50Hz).
+- Dimmer state is stored in persistent storage, and restored on boot (currently with a delay of about 2s).
+- Overcurrent detection is relaxed to avoid getting triggered by interference. This lead to slower overcurrent detection though (~400ms).
+- Fixed bug where a mesh message on an invalid handle would lead to a crash.
+
 ## Crownstone 1.6.0
 - Added support for boards ACR01B2G and ACR01B6C.
 
