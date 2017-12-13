@@ -4,7 +4,9 @@
 To do a first-time setup, all you need to do is run the `install_openocd.sh` script. This will take a while, so you might want to get a cup of coffe.
 
 ## connecting Crownstone to Raspberry pi
+
 Crownstone| Raspberry  pi
+--- | ---
 3.3V| (do not connect when powering the Crownstone through AC power)
 GND| GND
 SWD-CLK| BCM24
