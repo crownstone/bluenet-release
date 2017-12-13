@@ -152,6 +152,13 @@
         "patch": "0x00",
         "legacy board value": 1005,
         "note": "schematic change\n name change for 'GND' to 'NEUTRAL'\n removed LED,R19,R20 from BOM output\n Also removed R21 from BOM. Should not be used in further revivions"
+      },
+      "ACR01B6D": {
+        "major": "0x01",
+        "minor": "0x06",
+        "patch": "0x00",
+        "legacy board value": 1006,
+        "note": "proto"
       }
     },
     "guidestone": {
