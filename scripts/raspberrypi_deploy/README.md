@@ -21,21 +21,29 @@ In order to flash firmware to a Crownstone, you need to have the following files
 - firmware intended to flash to the Crownstone, here called `MERGED_OUTPUT.hex`
 - UICR settings file called `VARIABLES.cfg`
 
-   $ mkdir -p /home/pi/dev/bluenet
+```
+$ mkdir -p /home/pi/dev/bluenet
+```
 
 #### Ubuntu
 Copy the config file:
 
-   $ scp openocd.cfg pi@1.2.3.4:/home/pi/dev/bluenet
+```
+$ scp openocd.cfg pi@1.2.3.4:/home/pi/dev/bluenet
+```
 
 Then generate the correct UICR config, and copy it:
 
-   $ python flash_UICR_variable_generator.py
-   $ scp VARIABLES.cfg pi@1.2.3.4:/home/pi/dev/bluenet
+```
+$ python flash_UICR_variable_generator.py
+$ scp VARIABLES.cfg pi@1.2.3.4:/home/pi/dev/bluenet
+```
 
 After [compiling the firmware](https://github.com/crownstone/bluenet), run the `combine.sh` script to get a merged hex. Go to the bin dir and then:
 
-   $ scp combined.hex pi@1.2.3.4:/home/pi/dev/bluenet/MERGED_OUTPUT.hex
+```
+$ scp combined.hex pi@1.2.3.4:/home/pi/dev/bluenet/MERGED_OUTPUT.hex
+```
 
 #### Windows
 The `MERGED_OUTPUT.hex` and `VARIABLES.cfg` files can be obtained by running `merge_hex_files.bat` and  `flash_UICR_variable_generator.py` respectively, from the windows_deploy folder.
@@ -46,7 +54,9 @@ Follow the instructions found in the README of that folder for more information.
 
 If these 3 files are present in the same dir, all you need to do is run:
 
-   $ sudo openocd
+```
+$ sudo openocd
+```
 
 NOTE: the script might hang after a while. It's not perfect yet. You can just stop the process and restart it. This usually makes it work. If the script is properly executed, the script will end on "`shutdown command invoked`"
 
@@ -54,13 +64,17 @@ NOTE: the script might hang after a while. It's not perfect yet. You can just st
 
 Install minicom:
 
-   $ sudo apt install minicom
+```
+$ sudo apt install minicom
+```
 
 TODO: config minicom (ctrl-a o) to remove dialup code, etc.
 
 Disable login via serial:
 
-   $ sudo raspi-config
+```
+$ sudo raspi-config
+```
 
 Select option *Interfacing options* then option *Serial*, set "login shell over serial" to *No*, and set "serial port hardware enabled" to *Yes*. Exit raspi-config, then reboot the pi.
 
