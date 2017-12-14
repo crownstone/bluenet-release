@@ -66,6 +66,7 @@
         "major": "0x01",
         "minor": "0x02",
         "patch": "0x00",
+        "legacy board value": 1503,
         "note": "schematic change\nChanged power measurement resistor values"
       },
       "ACR01B2G": {
@@ -138,12 +139,14 @@
         "major": "0x01",
         "minor": "0x03",
         "patch": "0x00",
+        "legacy board value": 1005,
         "note": "prototype & major schematic change\n remove MELF resistor and added C15 copensation cap in parallel with zener diode\n Layout change to allow for higher capacitance values before and after LDO (100uF and 220uF respectively)\n Thermal fusse moved to cover both IGBT and relay paths\n Pulldown added onto IGBT driver input\n Current and voltage measurement circuit altered and supplemented with an offset read\n PTC thermal sensor replaced with NTC\n Inductor added in IGBT path for high freq switch spike reduction"
       },
       "ACR01B6B": {
         "major": "0x01",
         "minor": "0x04",
         "patch": "0x00",
+        "legacy board value": 1005,
         "note": "No discernable change\n mainly component source alterations"
       },
       "ACR01B6C": {

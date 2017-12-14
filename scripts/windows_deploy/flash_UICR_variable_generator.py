@@ -129,10 +129,17 @@ class UICR:
 		if (OS=="win"):
 			outputFileExtension = ".cmd"
 			batchPreamble = "set "
+			assign_operator = "="
 			commentChar = "::"
 		elif (OS=="lin"):
 			outputFileExtension = ".sh"
 			batchPreamble = ""
+			assign_operator = "="
+			commentChar = "#"
+		elif (OS=="piOCD"):
+			outputFileExtension = ".cfg"
+			batchPreamble = "set "
+			assign_operator = " "
 			commentChar = "#"
 		else:
 			print("no proper OS chosen")
@@ -140,16 +147,16 @@ class UICR:
 		file = open("VARIABLES" + outputFileExtension,"w")
 		file.write("%s!/bin/bash\n" % commentChar)
 		file.write("%s UICR variables file for %s type Crownstone\n" % (commentChar, self.productTypeName))
-		file.write("%sboard_name=%s\n" % (batchPreamble, self.boardName))
+		file.write("%sboard_name%s%s\n" % (batchPreamble, assign_operator, self.boardName))
 		file.write("\n%s legacy board value\n" % commentChar)
-		file.write("%sboard_val=0x%X\n" % (batchPreamble, self.boardVal))
+		file.write("%sboard_val%s0x%X\n" % (batchPreamble, assign_operator, self.boardVal))
 		file.write("\n%s product family, market and product type\n" % commentChar)
 		file.write("%s product type: %s -> 0x%0.2X\n" %(commentChar, self.productTypeName, self.prodType))
-		file.write("%sfam_market_type=0x%0.8X\n" % (batchPreamble, self.fammarkettype))
+		file.write("%sfam_market_type%s0x%0.8X\n" % (batchPreamble, assign_operator, self.fammarkettype))
 		file.write("\n%s major, minor and patch version numbers\n" % commentChar)
-		file.write("%smaj_min_patch=0x%0.8X\n" % (batchPreamble, self.majminpatch))
+		file.write("%smaj_min_patch%s0x%0.8X\n" % (batchPreamble, assign_operator, self.majminpatch))
 		file.write("\n%s production run in year, week and housing identification\n" % commentChar)
-		file.write("%sprodrun_housingid=0x%0.8X" % (batchPreamble, self.prodrunHousingid))
+		file.write("%sprodrun_housingid%s0x%0.8X" % (batchPreamble, assign_operator, self.prodrunHousingid))
 		file.close()
 		# also add a bash output file for raspberry pi programming
 		return
@@ -159,6 +166,7 @@ outputDict = traverseDict(data,outputDict)
 #print outputDict
 ui=UICR(outputDict)
 ui.writeFile("win") # output for windows (batch/cmd)
-ui.writeFile("lin") # output for linux (bash/shell)
+#ui.writeFile("lin") # output for linux (bash/shell)
+ui.writeFile("piOCD") # output for Raspberry pi /openocd script
 raw_input("everything in done, press enter to quit")
 
