@@ -76,7 +76,18 @@ Disable login via serial:
 $ sudo raspi-config
 ```
 
-Select option *Interfacing options* then option *Serial*, set "login shell over serial" to *No*, and set "serial port hardware enabled" to *Yes*. Exit raspi-config, then reboot the pi.
+- Select option *Interfacing options*.
+- Then option *Serial*.
+- Set "login shell over serial" to *No*.
+- Set "serial port hardware enabled" to *Yes*.
+- Exit raspi-config.
+- Then reboot the pi.
+
+Now you can start minicom:
+
+```
+$ sudo minicom -b 38400 -c on -D /dev/ttyAMA0
+```
 
 # Copyrights
 
