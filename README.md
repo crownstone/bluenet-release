@@ -10,6 +10,18 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 # Releases
 
+## Crownstone 2.0.0
+- Crownstone IDs are now 1B, this changed a lot of protocol.
+- Changed advertisement protocol to include more data.
+- Crownstones now send their state over the mesh.
+- Crownstones can now be controlled over the mesh.
+- Added switch lock.
+- Added config to allow dimming.
+- Added energy calculation (cleared on reboot though).
+- Added binary UART protocol.
+- Added dimming to only start X seconds after boot.
+- Added IGBT failure detection.
+
 ## Crownstone 1.7.1
 - Changed soft fuse to turn relay on when IGBTs are overloaded (temperature or current).
 
