@@ -47,7 +47,8 @@
         "minor": "0x00",
         "patch": [
           "0x00",
-          "0x01"
+          "0x01",
+          "0x02"
         ],
         "production year": 16,
         "production week": 48,
@@ -112,7 +113,8 @@
         "minor": "0x04",
         "patch": [
           "0x00",
-          "0x01"
+          "0x01",
+          "0x02"
         ],
         "production year": 17,
         "production week": 8,
@@ -161,7 +163,7 @@
         "minor": "0x06",
         "patch": "0x00",
         "legacy board value": 1006,
-        "note": "proto"
+        "note": "schematic change & protoype\n Changed current measurement to incorporate a 3 stage amplifier. Added stbilizing cap to offset measurement line. Additional 100nF cap to 3v3 line. Added pads for RF shielding"
       }
     },
     "guidestone": {
