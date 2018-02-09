@@ -85,6 +85,8 @@ $ sudo raspi-config
 - Exit raspi-config.
 - Then reboot the pi.
 
+**NOTE: the raspberry-pi 3 uses this ttyAMA0 for bluetooth.**
+
 Now you can start minicom:
 
 ```
