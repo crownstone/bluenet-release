@@ -52,13 +52,15 @@ Follow the instructions found in the README of that folder for more information.
 
 #### Flash
 
-If these 3 files are present in the same dir, all you need to do is run:
+If these 3 files are present in the same dir, run:
 
 ```
 $ sudo openocd
 ```
 
 NOTE: the script might hang after a while. It's not perfect yet. You can just stop the process and restart it. This usually makes it work. If the script is properly executed, the script will end on "`shutdown command invoked`"
+
+Lastly, you have to *reset the device manually*.
 
 ## Using UART
 
