@@ -10,6 +10,13 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 # Releases
 
+## Crownstone 2.0.1
+- Dimmer state is no longer restored on boot, relay is used instead (to prevent unnecessary relay toggles when crownstone is behind wall switch).
+- Switch lock is disabled when enabling dimming. There is no use case for having both enabled.
+- Mesh is no longer flooded by state messages: max 1 state message per 3s is sent.
+- Fixed bug where relay was toggled when changing dim value while dimming is not available.
+- Fixed bug where relay was being turned on/off while already turned on/off when changing dim value.
+
 ## Crownstone 2.0.0
 - Crownstone IDs are now 1B, this changed a lot of protocol.
 - Changed advertisement protocol to include more data.
