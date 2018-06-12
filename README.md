@@ -10,6 +10,18 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 # Releases
 
+## Crownstone 2.1.0
+- Setup is now a single command.
+- RSSI between mesh nodes is now advertised.
+- First version of Switchcraft.
+- Advertisements now always use the same service UUID, device type is in the payload.
+- Writing switch state to flash now (most of the times) takes a few ms instead of >100ms.
+- Improved ADC: stable sampling frequency, and detects when a stall happened.
+- Fixed bug where UART TX would stop working.
+
+## Crownstone 2.0.2
+- If no board version is in UICR, the default hardware board is written.
+
 ## Crownstone 2.0.1
 - Dimmer state is no longer restored on boot, relay is used instead (to prevent unnecessary relay toggles when crownstone is behind wall switch).
 - Switch lock is disabled when enabling dimming. There is no use case for having both enabled.
