@@ -10,6 +10,9 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 # Releases
 
+## Crownstone 2.1.2
+- Changed mesh channel to 37.
+
 ## Crownstone 2.1.0
 - Setup is now a single command.
 - RSSI between mesh nodes is now advertised.
