@@ -87,6 +87,10 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 ## Crownstone Plug 1.0.0
 
+# Instructions
+
+The above releases are automatically rolled out through our infrastructure towards all bluenet running devices (under which the Crownstone switches and plugs). Release 2.1.4 is the latest release with an unsecure bootloader, after this release a secure bootloader is used. Tools like `nrfutil pkg display "crownstone_*.zip"` only work on the new .zip files.
+
 # Copyrights
 
 The copyrights (2014-2017) belongs to the team of Crownstone B.V. and are provided under an noncontagious open-source license:
