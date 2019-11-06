@@ -14,8 +14,7 @@ uint32 | [Production Info](#production_info) | 0x10001090 | Production dates & c
 ## <a name="legacy_board_info"></a> Legacy Board information
 Type | Name | Description
 --- | --- | ---
-uint16 | Board version | Board value corresponding to your board.
-uint16 | Reserved | 0
+uint32 | Board version | Board value corresponding to your board.
 
 
 The version number corresponding to your particular board can be found in `cs_Boards.h`
