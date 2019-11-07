@@ -10,6 +10,27 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 # Releases
 
+## Crownstone 3.0.5
+- Fixed plugs getting low voltage, by scanning only 75% of the time.
+- Fixed bug where setup would wait forever on Guidestones and USB sticks.
+- Turn on switch when upgrading from firmware version 2.
+
+## Crownstone 3.0.4
+- Fixed false detection of dimmer on failure, by decreasing ADC timeout.
+
+## Crownstone 3.0.3
+- Fixed crash in FDS init when upgrading from firmware version 2.
+
+## Crownstone 3.0.2
+- Fixed dimming, by always using the crystal HF clock.
+
+## Crownstone 3.0.1
+- Fixed bug where state of other Crownstones would be advertised for too long.
+
+## Crownstone 3.0.0
+- First release with SDK 15
+- First release with official Bluetooth Mesh.
+
 ## Crownstone 2.1.2
 - Changed mesh channel to 37.
 
