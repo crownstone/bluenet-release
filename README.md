@@ -10,6 +10,9 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 # Releases
 
+## Crownstone 3.0.6
+- Also scan only 75% of the time with the plug 1B2C and builtin 1B1D.
+
 ## Crownstone 3.0.5
 - Fixed plugs getting low voltage, by scanning only 75% of the time.
 - Fixed bug where setup would wait forever on Guidestones and USB sticks.
