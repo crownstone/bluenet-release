@@ -10,6 +10,13 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 # Releases
 
+## Crownstone 4.0.1
+- Fixed bug that would get the firmware in a bootloop, due to flash corruption.
+
+## Crownstone 4.0.0
+- First release with behaviours.
+- Characteristics and protocol changes.
+
 ## Crownstone 3.0.6
 - Also scan only 75% of the time with the plug 1B2C and builtin 1B1D.
 
