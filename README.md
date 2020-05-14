@@ -10,6 +10,20 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 # Releases
 
+## Firmware 5.0.0
+- Added state/config set via mesh.
+- Added persistence mode to state get/set.
+- Added iBeacon interleaving.
+- Added IPC, enabling to get the bootloader version while not in DFU mode.
+- Improved zero power calibration.
+- Fixed stones ignoring messages of other stones in the mesh.
+- Fixed some behaviour bugs.
+- Fixed dimmer intensity inversion.
+
+## Bootloader 2.1.0
+- Added bootloader info that can be read by application.
+- Changed the GPREGRET is used.
+
 ## Crownstone 4.0.1
 - Fixed bug that would get the firmware in a bootloop, due to flash corruption.
 
