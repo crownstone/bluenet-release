@@ -10,7 +10,15 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 # Releases
 
+## Firmware 5.0.1
+- Persist ibeacon config id activation.
+- Added control command result to UART.
+- Fixed dumb home mode.
+- Fixed mesh command results.
+- Fixed tracked devices never timing out.
+
 ## Firmware 5.0.0
+- Added watchdog.
 - Added state/config set via mesh.
 - Added persistence mode to state get/set.
 - Added iBeacon interleaving.
