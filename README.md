@@ -10,6 +10,17 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 # Releases
 
+## Firmware 5.1.0
+- Added soft on: slowly transition to new dim value in less than a second.
+- Added debug commands (uptime, switch history, power samples, etc).
+- Added tracked devices heartbeat command.
+- Throttle set time and suntimes, to prevent times going back and forth.
+- Limited dim value to minimum of 10% as workaround for hardware.
+- Added more ADC buffers, leading to barely any restarts.
+- Fixed bug in median filter of power samples.
+- Added workaround for switchcraft to handle voltage measurement peaks.
+- Fixed crash when receiving an advertisement with a field of len 0.
+
 ## Firmware 5.0.1
 - Persist ibeacon config id activation.
 - Added control command result to UART.
