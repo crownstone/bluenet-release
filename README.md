@@ -10,6 +10,16 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 # Releases
 
+## Firmware 5.2.0
+- Improved switch detection for slower wall switches.
+- Dimming allowed is disabled when dimmer softfuse is triggered.
+- Added debug command to get RAM stats.
+- Added debug command to clean flash.
+- Fixed tracked device heartbeat.
+- Fixed bug where turning switch on (255), with an active twilight, and dimming not allowed, would result in the switch being turned off again.
+- Fixed debug softfuse buffer.
+- Fixed ADC channel swap.
+
 ## Firmware 5.1.0
 - Added soft on: slowly transition to new dim value in less than a second.
 - Added debug commands (uptime, switch history, power samples, etc).
