@@ -10,6 +10,9 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 # Releases
 
+## Firmware 5.2.1
+- Fixed crash when setting switchcraft threshold.
+
 ## Firmware 5.2.0
 - Improved switch detection for slower wall switches.
 - Dimming allowed is disabled when dimmer softfuse is triggered.
