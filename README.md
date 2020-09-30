@@ -10,6 +10,13 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 # Releases
 
+## Firmware 5.3.0
+- New UART protocol.
+- Built-in One can now measure up to 16A.
+- Improved power measurement smoothing.
+- Added debug switch buffer.
+- Fixed background advertisement validation timestamp check.
+
 ## Firmware 5.2.1
 - Fixed crash when setting switchcraft threshold.
 
