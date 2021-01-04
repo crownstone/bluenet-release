@@ -10,6 +10,13 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 # Releases
 
+## Firmware 5.4.0
+- Breaking change of UART protocol.
+- Implemented UART encryption.
+- Added time synching.
+- Added hub support.
+- Added binary logger.
+
 ## Firmware 5.3.0
 - New UART protocol.
 - Built-in One can now measure up to 16A.
