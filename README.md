@@ -10,6 +10,9 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 # Releases
 
+## Firmware 5.4.1
+- Fixed UART not listening when in setup mode.
+
 ## Firmware 5.4.0
 - Breaking change of UART protocol.
 - Implemented UART encryption.
