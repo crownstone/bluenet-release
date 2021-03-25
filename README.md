@@ -10,6 +10,9 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 # Releases
 
+## Firmware 5.4.2
+- Handle mesh messages from 255 devices instead of 40.
+
 ## Firmware 5.4.1
 - Fixed UART not listening when in setup mode.
 
