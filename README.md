@@ -10,6 +10,11 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 # Releases
 
+## Firmware 5.5.0
+- Added asset filtering.
+- Added mesh topology.
+- Added outgoing connections.
+
 ## Firmware 5.4.2
 - Handle mesh messages from 255 devices instead of 40.
 
