@@ -10,6 +10,11 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 # Releases
 
+## Firmware 5.6.0
+- Added more asset filtering features.
+- Fixed bug in tracked devices.
+- Fixed softfuse.
+
 ## Firmware 5.5.0
 - Added asset filtering.
 - Added mesh topology.
