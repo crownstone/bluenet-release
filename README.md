@@ -10,6 +10,9 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 # Releases
 
+## Firmware 5.6.1
+- Fixed crash on connect.
+
 ## Firmware 5.6.0
 - Added more asset filtering features.
 - Fixed bug in tracked devices.
