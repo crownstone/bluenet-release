@@ -10,8 +10,13 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 # Releases
 
+## Firmware 5.6.2
+- Restore behaviour enabled/disabled on boot.
+- Added synchronizing of behaviour enabled/disabled on boot.
+- Fixed crash on incoming connect.
+
 ## Firmware 5.6.1
-- Fixed crash on connect.
+- Fixed crash on outoing connect.
 
 ## Firmware 5.6.0
 - Added more asset filtering features.
