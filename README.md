@@ -10,6 +10,11 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 # Releases
 
+## Firmware 5.6.3
+- Fixed crash in factory reset mode.
+- Fixed crash when a device connected and very quickly disconnected again.
+- Fixed low chip voltage detection not being enabled.
+
 ## Firmware 5.6.2
 - Restore behaviour enabled/disabled on boot.
 - Added synchronizing of behaviour enabled/disabled on boot.
