@@ -10,6 +10,9 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 # Releases
 
+## Firmware 5.6.4
+- Fixed bug in extended behaviour.
+
 ## Firmware 5.6.3
 - Fixed crash in factory reset mode.
 - Fixed crash when a device connected and very quickly disconnected again.
