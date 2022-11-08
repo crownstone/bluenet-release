@@ -10,6 +10,9 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 # Releases
 
+## Bootloader 2.2.0
+- Changed IPC ram layout.
+
 ## Firmware 5.6.4
 - Fixed bug in extended behaviour.
 
