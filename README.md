@@ -10,6 +10,12 @@ This Repository keeps track of the released version of bluenet. For the code hav
 
 # Releases
 
+## Firmware 5.7.0
+- Added microapp support.
+- Added double tap switchcraft.
+- Energy is no longer reset when the Crownstone soft resets.
+- Fixed bug where energy would not accumulated anymore.
+
 ## Bootloader 2.2.0
 - Changed IPC ram layout.
 
